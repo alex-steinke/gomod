@@ -1,4 +1,4 @@
-package main
+package gomod
 
 type AllTodos map[string]todo
 

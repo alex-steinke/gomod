@@ -1,4 +1,4 @@
-module github.com/alex-steinke/go-mod
+module github.com/alex-steinke/gomod
 
 go 1.18
 

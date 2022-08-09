@@ -1,9 +1,8 @@
-package main
+package gomod
 
 import (
-	"net/http"
-
 	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
 func createTodo(ctx *gin.Context, s Store) {
