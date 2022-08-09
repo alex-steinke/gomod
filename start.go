@@ -1,9 +1,7 @@
-package api
+package main
 
 import (
 	"github.com/gin-gonic/gin"
-
-	"github.com/observiq/embeddable-react/ui"
 )
 
 func Start() {
@@ -11,7 +9,7 @@ func Start() {
 	router := gin.Default()
 
 	addRoutes(router, store)
-	ui.AddRoutes(router)
+	AddRoutes(router)
 
 	router.Run(":4000")
 }

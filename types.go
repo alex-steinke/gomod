@@ -1,4 +1,4 @@
-package api
+package main
 
 type AllTodos map[string]todo
 

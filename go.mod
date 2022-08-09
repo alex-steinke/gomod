@@ -1,4 +1,4 @@
-module github.com/observiq/embeddable-react
+module github.com/alex-steinke/go-mod
 
 go 1.18
 
