@@ -10,6 +10,9 @@ import (
 
 var ErrNotFound = errors.New("not found")
 
+type Export struct {
+}
+
 type Store interface {
 	Create(description string) todo
 	Check(id string, completed bool) (todo, error)
@@ -32,7 +35,7 @@ type todo struct {
 	CreatedAt int64 `json:"createdAt"`
 }
 
-func newStore() Store {
+func newStore(c Export) Store {
 	s := &store{
 		todos: make(map[string]*todo),
 	}
